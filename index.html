@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Countries Rest Challenge</title>
+</head>
+
+<body>
+    <main class="container">
+        <header class="header">
+            <h1>Where in the world?</h1>
+            <button id="btn-theme-Toggle" class="header-themeToggle-btn">
+                <ion-icon name="moon"></ion-icon> Dark Mode
+            </button>
+        </header>
+        <section class="controlsArea">
+            <div class="searchBox">
+                <ion-icon name="search"></ion-icon>
+                <input type="text" id="search">
+            </div>
+
+            <div id="regionFilter" class="regionFilter">
+                <div class="regionFilter-Title" id="regionFilter-Title">Filter By Region <ion-icon name="arrow-dropdown"></ion-icon>
+                </div>
+                <div class="regionFilter-options hideOptions" id="regionFilter-options">
+                </div>
+            </div>
+
+        </section>
+        <section>
+            <div class="country-list" id="country-list"></div>
+        </section>
+        <div class="modal-container" id="modal-container">
+        </div>
+
+    </main>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
